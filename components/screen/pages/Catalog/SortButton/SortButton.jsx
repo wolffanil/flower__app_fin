@@ -1,5 +1,5 @@
-import styled from "./sortButton.module.css";
-import SortForm from "../sortForm/SortForm";
+import styled from "./SortButton.module.css";
+import SortForm from "../SortForm/SortForm";
 
 export const SortButton = () => {
   return (
