@@ -28,7 +28,7 @@ export default function Header() {
             <li>
               <Link href="/">
                 <Image
-                  src="/icons/logoLite.svg"
+                  src="/icons/logoLIte.svg"
                   alt="logo"
                   width={75}
                   height={100}
@@ -62,10 +62,7 @@ export default function Header() {
           ) : (
             <li>
               {loading ? (
-              <div className={styled.nav__loading}>
-                Загрузка
-
-              </div>
+                <div className={styled.nav__loading}>Загрузка</div>
               ) : (
                 <Link href="/login" className={styled.nav__link}>
                   ВОЙТИ
@@ -86,15 +83,9 @@ export default function Header() {
           )}
 
           <li className={styled.nav__burger}>
-              <Burger>
-                <Image
-                  src="/icons/menu.svg"
-                  alt="menu"
-                  width={50}
-                  height={30}
-
-                />
-              </Burger>
+            <Burger>
+              <Image src="/icons/menu.svg" alt="menu" width={50} height={30} />
+            </Burger>
           </li>
         </ul>
       </nav>
