@@ -50,7 +50,7 @@ function AddProduct() {
   //   }
   // }, []);
   let flower = [];
-  let action = 'create';
+  let action = "create";
 
   if (typeof window !== "undefined") {
     flower = localStorage.key("flower")
@@ -58,7 +58,6 @@ function AddProduct() {
       : "";
 
     action = flower ? "update" : "create";
-
   }
 
   const { isPending: isCreateProduct, mutate: createProduct } =
@@ -69,7 +68,7 @@ function AddProduct() {
 
   const router = useRouter();
 
-  const { user, isLaoading: isAuthLoading, } = useAuthContext();
+  const { user, isLaoading: isAuthLoading } = useAuthContext();
 
   const isLaoading = isUpdateProduct || isCreateProduct;
 
@@ -120,7 +119,6 @@ function AddProduct() {
             // reset();
             // router.push("/");
             // localStorage.removeItem("flower");
-
             // return;
           },
 
@@ -150,7 +148,6 @@ function AddProduct() {
         },
         {
           onSuccess: () => {
-            toast.success("Товар успешшно создан", { id });
             reset();
             setValue("file", []);
           },
@@ -163,6 +160,8 @@ function AddProduct() {
           },
         }
       );
+
+      toast.success("Товар успешно создан", { id });
     }
 
     router.push("/");
@@ -222,16 +221,16 @@ function AddProduct() {
           </option>
         ))}
 
-          <option
-            value=""
-            disabled
-            selected
-            style={{
-              display: "none",
-            }}
-          >
-            Выберите вид
-          </option>
+        <option
+          value=""
+          disabled
+          selected
+          style={{
+            display: "none",
+          }}
+        >
+          Выберите вид
+        </option>
       </select>
 
       {errors.kind && errors.kind.message && (
@@ -253,16 +252,16 @@ function AddProduct() {
             {k.label}
           </option>
         ))}
-         <option
-            value=""
-            disabled
-            selected
-            style={{
-              display: "none",
-            }}
-          >
-            Выберите страну
-          </option>
+        <option
+          value=""
+          disabled
+          selected
+          style={{
+            display: "none",
+          }}
+        >
+          Выберите страну
+        </option>
       </select>
 
       {errors.made && errors.made.message && (
@@ -283,16 +282,16 @@ function AddProduct() {
             {k.label}
           </option>
         ))}
-         <option
-            value=""
-            disabled
-            selected
-            style={{
-              display: "none",
-            }}
-          >
-            Выберите стиль
-          </option>
+        <option
+          value=""
+          disabled
+          selected
+          style={{
+            display: "none",
+          }}
+        >
+          Выберите стиль
+        </option>
       </select>
 
       {errors.type && errors.type.message && (
