@@ -1,0 +1,51 @@
+.button {
+  padding: 20px 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+
+  font-family: var(--font-raleway);
+  font-size: 35px;
+  font-weight: 400;
+  background-color: #FDF4E5;
+  border: none;
+  border-radius: 15px;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.button_12px {
+  margin-top: 12px;
+}
+
+.button_55px {
+  margin-top: 55px;
+}
+
+.button_px20px {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+@media (max-width: 575px) { 
+  .button {
+    padding: 10px 55px;
+    font-size: 15px;
+  }
+  
+  .button_12px {
+    margin-top: 6px;
+  }
+  
+  .button_55px {
+    margin-top: 25px;
+  }
+  
+  .button_px20px {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}

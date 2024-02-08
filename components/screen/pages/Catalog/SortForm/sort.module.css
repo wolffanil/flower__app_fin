@@ -1,0 +1,141 @@
+.sort__form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    padding-top: 61px;
+    padding-bottom: 70px;
+    background-color: var(--gray-color);
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: auto;
+    right: 0;
+}
+
+.sort__p {
+font-family: var(--font-raleway);
+font-weight: 400;
+font-size: 40px;
+color: #000000;
+text-align: start;
+}
+
+.sort__price__p {
+    font-family: var(--font-raleway);
+    font-weight: 400;
+    font-size: 25px;
+    color: #000000;
+}
+
+.sort__price__input {
+    width: 100px;
+    height: 30px;
+    padding: 5px;
+    background-color: var(--cream-color);
+    border: none;
+}
+
+.sort__price__wrapper{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+}
+
+.sort__select {
+    width: 100%;
+    background-color: var(--cream-color);
+    font-family: var(--font-raleway);
+    font-weight: 400;
+    font-size: 25px;
+    color: #000000;
+    margin-top: 41px;
+}
+
+.sort__button {
+    width: 100%;
+    background-color: var(--cream-color);
+    font-family: var(--font-raleway);
+    font-weight: 400;
+    font-size: 25px;
+    margin-top: 50px;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    column-gap: 10px;
+}
+.sort__active {
+    background-color: var(--cream-color);
+    font-family: var(--font-raleway);
+    font-weight: 400;
+    font-size: 25px;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+    border: none;
+    padding: 10px 5px;
+}
+
+.sort__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 69px;
+    column-gap: 10px;
+
+}
+
+@media (max-width: 575px) {
+    .sort__form {
+        width: 200px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .sort__p {
+    font-size: 15px;
+    }
+    
+    .sort__price__p {
+        font-size: 13px;
+    }
+    
+    .sort__price__input {
+        width: 50px;
+        height: 15px;
+        padding: 2px;
+    }
+    
+    .sort__price__wrapper{
+        column-gap: 10px;
+    }
+    
+    .sort__select {
+        font-size: 15px;
+        margin-top: 20px;
+    }
+    
+    .sort__button {
+        font-size: 10px;
+        margin-top: 25px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        column-gap: 5px;
+    }
+    .sort__active {
+        font-size: 15px;
+        padding: 5px 2px;
+    }
+    
+    .sort__wrapper {
+        margin-top: 30px;
+        column-gap: 5px;
+    
+    }
+}

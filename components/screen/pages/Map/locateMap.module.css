@@ -1,0 +1,16 @@
+.locate__map__wrapper {
+  width: 752px;
+  height: 577px;
+  border-radius: 20px;
+  background-color: var(--cream-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 575px) {
+  .locate__map__wrapper {
+    width: 289px;
+    height: 364px;
+  }
+}

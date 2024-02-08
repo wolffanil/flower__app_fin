@@ -1,0 +1,37 @@
+.auth {
+  background: var(--cream-color);
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding-top: 430px; */
+}
+
+.sheet-left {
+  position: absolute;
+  left: -45px;
+  transform: rotate(180deg);
+  top: 20px;
+}
+
+.sheet-right {
+  position: absolute;
+  right: -45px;
+}
+
+.logo {
+  display: block;
+  margin: 10px auto;
+}
+
+@media (max-width: 575px) {
+  .sheet-left {
+  display: none;
+}
+
+.sheet-right {
+  display: none;
+}
+}

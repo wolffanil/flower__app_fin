@@ -1,0 +1,18 @@
+.products__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: start;
+  margin-top: 46px;
+}
+
+@media (max-width: 575px) { 
+  .products__wrapper {
+    flex-direction: column;
+  justify-content: unset;
+
+    align-items: center;
+    margin-top: 46px;
+  }
+}
+

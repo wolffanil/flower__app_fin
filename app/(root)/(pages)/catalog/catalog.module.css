@@ -1,0 +1,13 @@
+.catalog__elems {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+@media (max-width: 575px) { 
+    .catalog__elems {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 25px;
+    }
+}

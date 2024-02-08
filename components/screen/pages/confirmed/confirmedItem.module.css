@@ -1,0 +1,243 @@
+.confirmedItem {
+  background-color: var(--cream-color);
+  padding: 84px 66px 74px 75px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 45px;
+  position: relative;
+}
+
+.confirmedItem__info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 416px;
+}
+
+.confirmedItem__info__title {
+  font-family: var(--font-raleway);
+  font-size: 50px;
+  font-weight: 400;
+  margin-top: 50px;
+}
+
+.confirmedItem__info__title:first-child {
+  margin-top: 0px;
+}
+
+.confirmedItem__info__input {
+  background-color: var(--cream-color);
+  margin-top: 40px;
+  border: none;
+  border-bottom: 1px solid #000;
+  width: 100%;
+  padding-left: 57px;
+  padding-bottom: 16px;
+  font-family: var(--font-raleway);
+  font-size: 35px;
+  font-weight: 400;
+}
+
+.confirmedItem__items {
+  width: 425px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.confirmedItem__items__wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 691px;
+  overflow-y: scroll;
+}
+
+.confirmedItem__items__block {
+  width: 100%;
+  display: flex;
+  margin-bottom: 53px;
+  justify-content: space-between;
+  align-items: center;
+  height: 193px;
+}
+
+.confirmedItem__items_photo {
+  width: 141px;
+  height: 193px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.confirmedItem__items_plus {
+  display: block;
+  width: 53px;
+  height: 53px;
+}
+
+.confirmedItem__items_number {
+  font-family: var(--font-raleway);
+  font-size: 96px;
+  font-weight: 400;
+  color: #000;
+  height: 142px;
+}
+
+.confirmedItem__items_price {
+  display: block;
+  font-family: var(--font-raleway);
+  font-size: 50px;
+  font-weight: 400;
+  margin-top: 47px;
+  margin: 0 auto;
+}
+
+.confirmedItem__items_button {
+  border: none;
+  display: block;
+  margin-top: 56px;
+  background-color: var(--gray-color);
+  font-weight: 400;
+  font-family: var(--gray-color);
+  font-size: 30px;
+  padding: 19px 25px;
+}
+
+.confirmedItem__line {
+  height: 100%;
+  width: 4px;
+  background-color: var(--gray-color);
+}
+
+.confirmedItem__cause {
+  color: red;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: var(--font-raleway);
+  margin-top: 20px;
+}
+
+.confirmedItem__status {
+  font-family: var(--font-raleway);
+  font-weight: 400;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.confirmedItem__status_new {
+  color: green;
+}
+
+.confirmItem__status_confirmed {
+  color: rgb(10, 96, 217);
+}
+
+.confirmItem__status_canceled {
+  color: rgb(255, 0, 0);
+}
+
+.confirmedItem__like {
+  width: 29px;
+  height: 29px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+
+
+
+@media (max-width: 575px) {
+  .confirmedItem {
+    background-color: var(--cream-color);
+    padding: 30px 40px 16px 19px;
+    margin-top: 35px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .confirmedItem__like {
+    width: 20px;
+    height: 20px;
+  }
+  
+
+  .confirmedItem__info {
+    width: 100%;
+  }
+
+  .confirmedItem__info__title {
+    font-size: 20px;
+    margin-top: 30px;
+  }
+
+  .confirmedItem__info__input {
+    margin-top: 20px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    font-size: 15px;
+  }
+
+  .confirmedItem__items {
+    width: 100%;
+    align-items: center;
+  }
+
+  .confirmedItem__items__wrapper {
+    width: 100%;
+    align-items: start;
+    height: unset;
+       min-height: 150px;
+
+    overflow-y: scroll;
+    margin-top: 20px;
+  }
+
+  .confirmedItem__items__block {
+    width: 100%;
+    margin-bottom: 22px;
+    height: 125px;
+  }
+
+  .confirmedItem__items_photo {
+    width: 92px;
+    height: 125px;
+  }
+
+  .confirmedItem__items_plus {
+    width: 20px;
+    height: 20px;
+  }
+
+  .confirmedItem__items_number {
+    font-size: 45px;
+    height: 70px;
+  }
+
+  .confirmedItem__items_price {
+    font-size: 20px;
+    margin-top: 22px;
+  }
+
+  .confirmedItem__items_button {
+    margin-top: 14px;
+    font-size: 17px;
+    padding: 9px;
+  }
+
+  .confirmedItem__line {
+    display: none;
+  }
+
+  .confirmedItem__cause {
+    color: red;
+    font-size: 15px;
+    margin-top: 10px;
+  }
+
+  .confirmedItem__status {
+    font-size: 18px;
+    margin-top: 5px;
+  }
+}

@@ -1,0 +1,64 @@
+.first {
+    height: 100vh;
+    background: url("/image/Font.jpg") center center/cover no-repeat;
+    padding-top: 205px;
+    margin-top: -177px;
+    z-index: -1;
+    position: relative;
+}
+
+.first__br {
+    display: none;
+}
+
+.first__title {
+    color: #FFF;
+    text-align: center;
+    font-family: var(--font-gormorant);
+    font-size: 70px;
+    font-weight: 500;
+    margin-top: 100px;
+    /* margin-top: 415px; */
+}
+
+.first__desc {
+    color: #FFF;
+    font-family: var(--font-raleway);
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: 51px;
+    text-align: center;
+}
+
+.first__logo {
+    display: block;
+    margin: 0 auto;
+}
+
+@media (max-width: 575px) { 
+    .first {
+        padding-top: 87px;
+        margin-top: -90px;
+    
+    }
+    
+    .first__title {
+      
+        font-size: 20px;
+        margin-top: 105px;
+    }
+    
+    .first__desc {
+       display: none;
+    }
+    
+    .first__logo {
+        width: 109px;
+        height: 111px;
+    }
+
+    .first__br {
+        display: block;
+    }
+}
+

@@ -1,0 +1,263 @@
+.form {
+  background-color: var(--gray-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 68px 63px;
+  margin: auto;
+  width: 600px;
+  border-radius: 30px;
+}
+
+.title {
+  color: #000;
+  font-family: var(--font-raleway);
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.input {
+  width: 100%;
+  color: #000;
+  background-color: var(--gray-color);
+
+  font-family: var(--font-raleway);
+  font-size: 25px;
+  font-weight: 400;
+  border: none;
+  border-bottom: 1px solid #000;
+  padding-left: 37px;
+  padding-bottom: 15px;
+  margin-top: 20px;
+  margin-bottom: 52px;
+  padding-top: 10px;
+}
+
+.input_top66px {
+  margin-top: 66px;
+}
+
+.error {
+  color: red;
+  margin-top: -20px;
+}
+
+.link {
+  color: #000;
+  margin-top: 25px;
+  font-family: var(--font-raleway);
+  font-size: 25px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.wrapper {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.wrapper__checkbox {
+  width: 27px;
+  height: 26px;
+  background-color: #ddd3c7;
+}
+
+.wrapper__desc {
+  color: #000;
+
+  font-family: var(--font-raleway);
+  font-size: 20px;
+  font-weight: 400;
+  margin-left: 35px;
+}
+
+.wrapper__link {
+  text-decoration: underline;
+}
+
+.form__addProduct_desc {
+  margin-top: 200px;
+}
+
+.form__mt66 {
+  margin-top: 66px;
+}
+
+.form__admin {
+  background-color: var(--cream-color);
+}
+
+.form__input_admin {
+  background-color: var(--cream-color);
+}
+
+.input__admin {
+  margin-bottom: 0px;
+  background-color: var(--cream-color);
+}
+
+.form__admin_button {
+  padding: 20px 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  font-family: var(--font-raleway);
+  font-size: 35px;
+  font-weight: 400;
+  background-color: var(--gray-color);
+  border: none;
+  border-radius: 15px;
+}
+
+.form__error_admin {
+  margin-top: 0px;
+  color: red;
+}
+
+.logo {
+  margin: 30px auto;
+  display: block;
+}
+
+.form__select {
+  width: 100%;
+  background-color: var(--cream-color);
+  font-family: var(--font-raleway);
+  font-weight: 400;
+  font-size: 25px;
+  color: #000000;
+  margin-top: 41px;
+  border-bottom: 1px solid #000;
+  padding-left: 15px;
+}
+
+.form__order {
+  background-color: var(--cream-color);
+  margin-top: 55px;
+}
+
+.form__order_subtitle {
+  font-family: var(--font-raleway);
+  font-weight: 400;
+  font-size: 50px;
+  margin-right: auto;
+  margin-top: 40px;
+}
+
+.form__order_button {
+  display: block;
+  padding: 20px 66px;
+  background-color: var(--gray-color);
+  font-family: var(--font-raleway);
+  font-weight: 400;
+  font-size: 35px;
+  margin: 0 auto;
+  margin-top: 83px;
+}
+
+.form__order_input {
+  background-color: var(--cream-color);
+}
+
+@media (max-width: 575px) {
+  .form {
+    padding: 34px 30px;
+    width: 280px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .input {
+    font-size: 15px;
+    padding-left: 10px;
+    padding-bottom: 8px;
+    margin-top: 10px;
+    margin-bottom: 26px;
+    padding-top: 5px;
+  }
+
+  .input_top66px {
+    margin-top: 33px;
+  }
+
+  .error {
+    margin-top: -10px;
+  }
+
+  .link {
+    margin-top: 13px;
+    font-size: 13px;
+  }
+
+  .wrapper {
+    margin-top: 10px;
+  }
+
+  .wrapper__desc {
+    font-size: 13px;
+    margin-left: 20px;
+  }
+
+  .form__addProduct_desc {
+    margin-top: 200px;
+  }
+
+  .form__mt66 {
+    margin-top: 33px;
+  }
+
+  .form__admin {
+    background-color: var(--cream-color);
+  }
+
+  .form__input_admin {
+    background-color: var(--cream-color);
+  }
+
+  .input__admin {
+    margin-bottom: 0px;
+    background-color: var(--cream-color);
+  }
+
+  .form__admin_button {
+    padding: 10px 35px;
+    font-size: 15px;
+  }
+
+  .form__error_admin {
+    margin-top: 0px;
+    color: red;
+  }
+
+  .logo {
+    margin: 30px auto;
+    display: block;
+  }
+
+  .form__select {
+    font-size: 13px;
+    margin-top: 21px;
+    padding-left: 8px;
+  }
+
+  .form__order {
+    margin-top: 25px;
+  }
+
+  .form__order_subtitle {
+    font-size: 25px;
+    margin-right: auto;
+    margin-top: 5px;
+  }
+
+  .form__order_button {
+    padding: 10px 15px;
+    font-size: 15px;
+    margin-top: 25px;
+  }
+}

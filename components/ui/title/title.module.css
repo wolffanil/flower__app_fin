@@ -1,0 +1,45 @@
+
+
+.title__text {
+    color: #000;
+    font-family: var(--font-raleway);
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: -20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title__text::before {
+    content: "";
+    height: 1px;
+    background: #000;
+    width: 40%;
+    display: block;
+}
+
+.title__text::after {
+    content: "";
+    height: 1px;
+    background: #000;
+    width: 40%;
+    display: block;
+}
+
+@media (max-width: 575px) {
+    .title__text {
+        display: block;
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .title__text::before {
+        display: none;
+    }
+    
+    .title__text::after {
+        display: none;
+    }
+}

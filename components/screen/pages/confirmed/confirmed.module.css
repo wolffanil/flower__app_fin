@@ -1,0 +1,17 @@
+.confirmed__filter {
+  width: 200px;
+  background-color: var(--cream-color);
+  font-family: var(--font-raleway);
+  font-weight: 400;
+  font-size: 20px;
+  border: none;
+}
+
+@media (max-width: 575px) {
+  .confirmed__filter {
+    width: 125px;
+    font-size: 15px;
+
+    margin-top: 10px;
+  }
+}

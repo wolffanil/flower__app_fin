@@ -1,0 +1,14 @@
+.map__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 110px;
+}
+
+@media (max-width: 575px) {
+    .map__wrapper {
+        justify-content: space-between;
+        flex-direction: column-reverse;
+        margin-top: 45px;
+        row-gap: 30px;
+    }
+}

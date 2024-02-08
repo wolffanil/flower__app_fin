@@ -1,0 +1,26 @@
+.aboutUs__logo {
+  display: block;
+  margin: 20px auto 0px auto;
+}
+
+.aboutUs__title {
+  text-align: center;
+  margin-top: 18px;
+  font-size: var(--font-gormorant);
+  font-size: 50px;
+  font-weight: 500;
+}
+
+@media (max-width: 575px) {
+  .aboutUs__logo {
+    display: block;
+    margin: 14px auto 0px auto;
+    width: 113px;
+    height: 145px;
+  }
+  
+  .aboutUs__title {
+    margin-top: 40px;
+    font-size: 20px;
+  }
+}

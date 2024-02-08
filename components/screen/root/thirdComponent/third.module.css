@@ -1,0 +1,136 @@
+.sale {
+    background-color: var(--cream-color);
+    height: 846px;
+    padding-top: 92px;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.sale__container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    width: 1068px;
+}
+
+.sale__img {
+    object-fit: cover;
+}
+
+.sale__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.sale__interest {
+    color: #000;
+    font-family: var(--font-gormorant);
+    font-size: 120px;
+    font-weight: 400;
+    margin-left: -159px;
+    margin-top: 45px;
+}
+
+.sale__desc {
+    color: #000;
+    text-align: right;
+    font-family: var(--font-raleway);
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: 71px;
+}
+
+.sale__button {
+    width: 337px;
+    height: 101px;
+    border-style: none;
+    background-color: var(--gray-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-raleway);
+    font-size: 30px;
+    font-weight: 400;
+    color: #000;
+    margin-top: 88px;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.sale__sheet_left {
+    position: absolute;
+    top: -38px;
+    left: -197px;
+    transform: rotate(137deg) scaleX(-1);
+}
+
+.sale__sheet_rigth {
+    position: absolute;
+    top: 286px;
+    right: -172px;
+    transform: rotate(304deg) scaleX(-1);
+}
+
+
+@media (max-width: 575px) { 
+    .sale {
+        height: 570px;
+        padding-top: 76px;
+    }
+    
+    .sale__container {
+        flex-direction: column;
+        width: 211px;
+    }
+    
+    .sale__img {
+        object-fit: cover;
+        width: 211px;
+        height: 258px;
+
+    }
+    
+    .sale__wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .sale__interest {
+        font-size: 50px;
+        margin: 0 auto;
+        /* margin-top: -45px; */
+        position: absolute;
+        top: 80px;
+        /* right: 10px; */
+
+    }
+    
+    .sale__desc {
+        text-align: center;
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    
+    .sale__button {
+        width: 191px;
+        height: 66px;
+        font-size: 25px;
+        margin-top: 29px;
+    }
+
+    .sale__sheet_rigth {
+        display: none;
+    }
+
+    .sale__sheet_left {
+        display: none;
+    }
+    
+}
+
+
+
+

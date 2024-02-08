@@ -1,0 +1,26 @@
+.slider__title {
+  margin-top: 100px;
+  text-align: center;
+  font-family: var(--font-raleway);
+  font-size: 40px;
+  font-weight: 400;
+  display: block;
+}
+
+.slider__wrapper {
+  width: 100%;
+  margin-top: 30px;
+}
+
+@media (max-width: 575px) {
+  .slider__title {
+    margin-top: 60px;
+    font-size: 20px;
+  }
+  
+  .slider__wrapper {
+    width: 188px;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+}

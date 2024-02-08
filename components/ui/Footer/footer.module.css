@@ -1,0 +1,174 @@
+.footer {
+  background-color: var(--cream-color);
+  min-height: 445px;
+  padding-top: 95px;
+  padding-bottom: 76px;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer__first__column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 374px;
+}
+
+.footer__first__column__p {
+  color: #000;
+  font-family: var(--font-raleway);
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 33px;
+}
+
+.footer__second__column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 147px;
+}
+
+.footer__second__third__column__li {
+  color: #000;
+  font-family: var(--font-raleway);
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 23px;
+  list-style-type: none;
+}
+
+.footer__second__column__cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 33px;
+  list-style-type: none;
+}
+
+.footer__third__column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 216px;
+}
+
+.footer__second__column__media {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  list-style-type: none;
+  width: 100%;
+}
+
+.footer__container {
+  width: 1033px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.footer__sheet_left {
+  position: absolute;
+  transform: rotate(46deg);
+  left: -123px;
+  top: -22px;
+}
+
+.footer__sheet_right {
+  position: absolute;
+  transform: rotate(20deg);
+  right: -115px;
+  transform: scaleX(-1) rotate(50deg);
+  top: -27px;
+}
+
+.footer__politic {
+  display: none;
+}
+
+@media (max-width: 575px) {
+  .footer {
+    min-height: 320px;
+    padding-top: 11px;
+    padding-bottom: 31px;
+  }
+
+  .footer__first__column {
+    width: 200px;
+  }
+
+  .footer__first__column__logo {
+    width: 62px;
+    height: 84px;
+    margin-bottom: 43px;
+  }
+
+  .footer__first__column__p {
+    display: none;
+  }
+
+  .footer__second__column {
+    width: 56px;
+  }
+
+  .footer__second__third__column__li {
+    font-size: 10px;
+    margin-bottom: 20px;
+  }
+
+  .footer__second__column__cards {
+    flex-direction: column;
+    margin-top: 15px;
+  }
+
+  .footer__second__column__media__logo {
+    width: 26px;
+    height: 26px;
+  }
+
+  .footer__third__column {
+    width: 107px;
+  }
+
+  .footer__second__column__media {
+    margin-top: 17px;
+    flex-wrap: wrap;
+    /* column-gap: 12px; */
+    /* justify-content: unset; */
+  }
+
+  .footer__container {
+    width: 200px;
+    flex-wrap: wrap;
+  }
+
+  .footer__sheet_left {
+    display: none;
+  }
+
+  .footer__sheet_right {
+    display: none;
+  }
+
+  .footer__second__column__media__logo {
+    width: 26px;
+    height: 26px;
+  }
+
+  .footer__second__column__cards__logo {
+    width: 31;
+    height: 21px;
+  }
+
+  .footer__politic {
+    display: block;
+    font-family: var(--font-raleway);
+    font-weight: 400;
+    font-size: 10px;
+    margin-top: 25px;
+    width: 187px;
+    text-align: center;
+  }
+}
