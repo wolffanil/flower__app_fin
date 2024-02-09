@@ -34,6 +34,8 @@ const FileUploader = ({ fieldChange, mediaUrl }) => {
               src={fileUrl}
               alt="uploaded"
               className={styled["file__uploader_img"]}
+              width={283}
+              height={250}
             />
           </div>
           <p className={styled["file__uploader_label"]}>

@@ -25,7 +25,7 @@ const optionsKind = [
 ];
 
 const optionsStyle = [
-  { value: "нежний", label: "Нежний" },
+  { value: "нежний", label: "Нежный" },
   { value: "жёлтый", label: "Жёлтый" },
   { value: "красный", label: "Красный" },
   { value: "синий", label: "Синий" },

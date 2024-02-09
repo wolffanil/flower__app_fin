@@ -72,6 +72,8 @@ function ItemProduct({ item, order, user, isAdmin }) {
         alt="item"
         onClick={() => router.push(`/flower/${item.product._id}`)}
         className={styled.confirmedItem__items_photo}
+        width={141}
+        height={193}
       />
       <img
         src="/icons/plus.svg"
