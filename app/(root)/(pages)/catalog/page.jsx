@@ -3,14 +3,13 @@ import { SortButton } from "@/components/screen/pages/Catalog/SortButton/SortBut
 import styled from "./catalog.module.css";
 import Products from "@/components/screen/pages/Catalog/Products/Products";
 
-
 export const metadata = {
-  title: 'Каталог',
-  description: 'Каталог цветов',
+  title: "Каталог",
+  description: "Каталог цветов",
   alternates: {
     canonical: `${process.env.CLIENT_URL}catalog`,
-  }
-}
+  },
+};
 
 async function getPopularFlowers() {
   const api = process.env.API_URL;
@@ -87,10 +86,7 @@ async function CatalogPage({ searchParams }) {
       {flowers.length < 1 ? (
         <div>Not found</div>
       ) : (
-      
-        <Products flowers={flowers} />
-        
-        
+        <Products flowers={flowers} pathname="catalog" />
       )}
     </>
   );

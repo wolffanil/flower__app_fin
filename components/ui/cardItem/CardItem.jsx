@@ -74,7 +74,7 @@ function CardItem({ card, pathname, isButton }) {
           height={511}
           className={`${styled.cartItem__photo} ${
             pathname && photoStyle[pathname]
-          }`}
+          } ${pathname === "catalog" ? styled.cartItem__photo__catalog : ""}`}
         />
       </Link>
 
