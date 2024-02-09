@@ -1,6 +1,7 @@
 import { footerLink } from "@/constants/footerLink";
 import Image from "next/image";
 import styled from "./footer.module.css";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -10,7 +11,6 @@ export default function Footer() {
         alt="sheet"
         width={415}
         height={504}
-      
         className={styled.footer__sheet_left}
       />
 
@@ -23,27 +23,46 @@ export default function Footer() {
       />
       <div className={styled.footer__container}>
         <div className={styled.footer__first__column}>
-          <Image
-            src="/icons/logoblack.svg"
-            alt="logo"
-            width={214}
-            height={214}
-            className={styled.footer__first__column__logo}
-          />
+          <Link href="/">
+            <Image
+              src="/icons/logoblack.svg"
+              alt="logo"
+              width={214}
+              height={214}
+              className={styled.footer__first__column__logo}
+            />
+          </Link>
           <p className={styled.footer__first__column__p}>
-            ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ
+            <a
+              href="https://astrahan.rus-buket.ru/public/personal-data-ru.pdf"
+              className={styled.footer__first__column__p}
+            >
+              ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ
+            </a>
           </p>
         </div>
         <div className={styled.footer__second__column}>
           <ul>
             <li className={styled.footer__second__third__column__li}>
-              КАТАЛОГ
+              <Link href="/catalog" className={styled.footer__link}>
+                КАТАЛОГ
+              </Link>
             </li>
-            <li className={styled.footer__second__third__column__li}>АКЦИИ</li>
             <li className={styled.footer__second__third__column__li}>
-              ВАКАНСИИ
+              <Link href="/aboutus" className={styled.footer__link}>
+                О НАС
+              </Link>
             </li>
-            <li className={styled.footer__second__third__column__li}>ПОМОЩЬ</li>
+            <li className={styled.footer__second__third__column__li}>
+              <Link href="/map" className={styled.footer__link}>
+                КАРТА
+              </Link>
+            </li>
+            <li className={styled.footer__second__third__column__li}>
+              <Link href="/" className={styled.footer__link}>
+                ПОМОЩЬ
+              </Link>
+            </li>
           </ul>
           <ul className={styled.footer__second__column__cards}>
             <li>
@@ -69,16 +88,24 @@ export default function Footer() {
         <div className={styled.footer__third__column}>
           <ul>
             <li className={styled.footer__second__third__column__li}>
-              ДОСТАВКА И ОПЛАТА
+              <Link href="/" className={styled.footer__link}>
+                ДОСТАВКА И ОПЛАТА
+              </Link>
             </li>
             <li className={styled.footer__second__third__column__li}>
-              ПУБЛИЧНАЯ ОФЕРА
+              <Link href="/" className={styled.footer__link}>
+                ПУБЛИЧНАЯ ОФЕРА
+              </Link>
             </li>
             <li className={styled.footer__second__third__column__li}>
-              УХОД ЗА БУКЕТОМ
+              <Link href="/" className={styled.footer__link}>
+                УХОД ЗА БУКЕТОМ
+              </Link>
             </li>
             <li className={styled.footer__second__third__column__li}>
-              УСЛУГИ И СЕРВИСЫ
+              <Link href="/" className={styled.footer__link}>
+                УСЛУГИ И СЕРВИСЫ
+              </Link>
             </li>
           </ul>
 
@@ -99,7 +126,14 @@ export default function Footer() {
           </ul>
         </div>
 
-        <p className={styled.footer__politic}>ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</p>
+        <p className={styled.footer__politic}>
+          <a
+            href="https://astrahan.rus-buket.ru/public/personal-data-ru.pdf"
+            className={styled.footer__first__column__p}
+          >
+            ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ
+          </a>
+        </p>
       </div>
     </footer>
   );

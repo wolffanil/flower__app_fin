@@ -19,7 +19,6 @@ import ItemProduct from "./ItemProduct";
 function ConfirmedItem({ order, user, isAdmin }) {
   const userCorrent = isAdmin ? order.user : user;
 
-  
   // const isLike = order.likes.find((item) => item.userId === user.id);
 
   const { items, status } = order;
@@ -30,20 +29,14 @@ function ConfirmedItem({ order, user, isAdmin }) {
   const { isPending: isLoadingConfirming, mutate: confirmeOrder } =
     useConfirmedOrder();
 
-
-
-
-  
-
-  const isLoading = isLoadingConfirming || isLoadingDeleting
-
+  const isLoading = isLoadingConfirming || isLoadingDeleting;
 
   const handleDeleteOrder = async () => {
     const id = toast.loading("Удаление заказа...");
 
     await deleteOrder(order._id, {
       onSuccess: () => {
-        toast.success("Заказ успешнно удалён", { id });
+        toast.success("Заказ успешно удалён", { id });
       },
 
       onError: (message) => {
@@ -59,7 +52,7 @@ function ConfirmedItem({ order, user, isAdmin }) {
 
     await confirmeOrder(order._id, {
       onSuccess: () => {
-        toast.success("Заказ успешнно потверждённ", { id });
+        toast.success("Заказ успешно потверждённ", { id });
       },
 
       onError: (message) => {
@@ -141,7 +134,13 @@ function ConfirmedItem({ order, user, isAdmin }) {
       <div className={styled.confirmedItem__items}>
         <div className={styled.confirmedItem__items__wrapper}>
           {items.map((item, key) => (
-            <ItemProduct key={key} item={item} order={order} user={user} isAdmin={isAdmin}/>
+            <ItemProduct
+              key={key}
+              item={item}
+              order={order}
+              user={user}
+              isAdmin={isAdmin}
+            />
           ))}
         </div>
 
@@ -160,7 +159,11 @@ function ConfirmedItem({ order, user, isAdmin }) {
                 : styled.confirmItem__status_canceled
             }`}
           >
-            {status}
+            {status === "new"
+              ? "Новый"
+              : status === "confirmed"
+              ? "Подтверждённый"
+              : "Отменённый"}
           </span>
         </p>
 

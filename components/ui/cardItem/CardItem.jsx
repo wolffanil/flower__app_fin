@@ -12,7 +12,7 @@ import { useAddProduct } from "@/lib/react-query/reactQueriesAndMutations";
 
 const photoStyle = {
   "/aboutus": styled.cartItem__photo_aboutus,
-  "/": styled.cartItem__photo_root
+  "/": styled.cartItem__photo_root,
 };
 
 function CardItem({ card, pathname, isButton }) {
@@ -37,7 +37,7 @@ function CardItem({ card, pathname, isButton }) {
       { productId: card._id, maxQuantity: card.quantity },
       {
         onSuccess: () => {
-          toast.success("Товар успешнно дабавлен", { id });
+          toast.success("Товар успешно дабавлен", { id });
         },
         onError: (message) => {
           const messageError = errorMessage(message);

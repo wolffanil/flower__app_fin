@@ -18,13 +18,17 @@ const optionsKind = [
   { value: "Розы", label: "Розы" },
   { value: "Тюльпаны", label: "Тюльпаны" },
   { value: "Васелёк", label: "Васелёк" },
+  { value: "Хризантемы", label: "Хризантемы" },
+  { value: "Лилия", label: "Лилия" },
+  { value: "Cухоцветы", label: "Сухоцветы" },
 ];
 
 const optionsStyle = [
-  { value: "Нежний", label: "Нежний" },
+  { value: "Нежный", label: "Нежный" },
   { value: "Жёлтый", label: "Жёлтый" },
   { value: "Красный", label: "Красный" },
   { value: "Синий", label: "Синий" },
+  { value: "Розовый", label: "Розовый" },
 ];
 
 const optionsCountries = [

@@ -40,7 +40,7 @@ const RegisterForm = () => {
 
     await signUp(data, {
       onSuccess: (user) => {
-        toast.success("Вы успешнно зарегестрировались", {
+        toast.success("Вы успешно зарегестрировались", {
           id,
         });
         setUser(user);

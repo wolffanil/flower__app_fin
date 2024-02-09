@@ -20,6 +20,8 @@
   font-size: 20px;
   font-weight: 400;
   margin-top: 33px;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .footer__second__column {
@@ -88,6 +90,12 @@
   display: none;
 }
 
+.footer__link {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 @media (max-width: 575px) {
   .footer {
     min-height: 320px;
@@ -103,6 +111,7 @@
     width: 62px;
     height: 84px;
     margin-bottom: 43px;
+    cursor: pointer;
   }
 
   .footer__first__column__p {
@@ -145,11 +154,19 @@
   }
 
   .footer__sheet_left {
-    display: none;
+    width: 125px;
+    height: 134px;
+    top: -29px;
+    left: -57px;
+    transform: rotate(193deg) scaleX(-1);
   }
 
   .footer__sheet_right {
-    display: none;
+    width: 125px;
+    height: 134px;
+    transform: rotate(14deg) scaleX(-1);
+    top: 289px;
+    right: -53px;
   }
 
   .footer__second__column__media__logo {

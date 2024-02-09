@@ -25,7 +25,7 @@ export default function CartOrder({ item, finished }) {
 
     await deletProduct(item.product._id, {
       onSuccess: () => {
-        toast.success("Товар успешнно удаллён", { id });
+        toast.success("Товар успешно удаллён", { id });
       },
       onError: (message) =>
         toast.error(`Ошибка: ${message.toString().split("Error: ")[1]}`, {

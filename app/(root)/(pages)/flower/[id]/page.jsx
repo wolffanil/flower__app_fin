@@ -13,11 +13,20 @@ const getProduct = cache(async (id) => {
   const data = await res.json();
 
   return data;
+});
 
-})
+export async function generateStaticParams() {
+  const api = process.env.API_URL;
+
+  const products = await fetch(`${api}/products`).then((res) => res.json());
+
+  return products.products.map((product) => ({
+    id: product._id,
+  }));
+}
 
 export async function generateMetadata({ params }) {
- const data = await getProduct(params.id);
+  const data = await getProduct(params.id);
 
   if (!data.product) {
     return {
@@ -31,7 +40,7 @@ export async function generateMetadata({ params }) {
     description: data.product.description,
     alternates: {
       canonical: `${process.env.CLIENT_URL}flower/${data.product._id}`,
-    }
+    },
   };
 }
 

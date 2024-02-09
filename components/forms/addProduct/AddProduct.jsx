@@ -13,12 +13,15 @@ import {
 import { useRouter } from "next/navigation";
 import { errorMessage } from "@/lib/errorMessage";
 import { useAuthContext } from "@/context/AuthContext";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 const optionsKind = [
   { value: "розы", label: "Розы" },
   { value: "тюльпаны", label: "Тюльпаны" },
   { value: "васелёк", label: "Васелёк" },
+  { value: "хризантемы", label: "Хризантемы" },
+  { value: "лилия", label: "Лилия" },
+  { value: "cухоцветы", label: "Сухоцветы" },
 ];
 
 const optionsStyle = [
@@ -26,6 +29,7 @@ const optionsStyle = [
   { value: "жёлтый", label: "Жёлтый" },
   { value: "красный", label: "Красный" },
   { value: "синий", label: "Синий" },
+  { value: "розовый", label: "Розовый" },
 ];
 
 const optionsCountries = [
@@ -132,7 +136,7 @@ function AddProduct() {
         }
       );
 
-      toast.success("Товар был успешнно обновлённ", {
+      toast.success("Товар был успено обновлён", {
         id,
       });
       reset();

@@ -2,6 +2,7 @@
 import { useCallback, useState } from "react";
 import { useDropzone } from "react-dropzone";
 import styled from "./fileUpload.module.css";
+import Image from "next/image";
 
 const FileUploader = ({ fieldChange, mediaUrl }) => {
   const [file, setFile] = useState([]);
@@ -29,7 +30,7 @@ const FileUploader = ({ fieldChange, mediaUrl }) => {
       {fileUrl ? (
         <>
           <div className={styled["file__uploader_wrapper"]}>
-            <img
+            <Image
               src={fileUrl}
               alt="uploaded"
               className={styled["file__uploader_img"]}

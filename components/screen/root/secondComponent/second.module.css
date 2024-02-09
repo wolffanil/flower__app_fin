@@ -1,116 +1,116 @@
 .popular {
-    background-color: var(--gray-color);
-    min-height: 100vh;
-    padding-top: 121px;
-    padding-bottom: 158px;
-    position: relative;
-    overflow-x: hidden;
+  background-color: var(--gray-color);
+  min-height: 100vh;
+  padding-top: 121px;
+  padding-bottom: 158px;
+  position: relative;
+  overflow-x: hidden;
 }
 
 .popular__sheet_left {
-    position: absolute;
-   top: 40px;
-    left: -25px;
-    transform: rotate(46deg) scaleX(-1);
+  position: absolute;
+  top: 40px;
+  left: -25px;
+  transform: rotate(46deg) scaleX(-1);
 }
 
 .popular__sheet_rigth {
-    position: absolute;
-       right: -78px;
-    top: -101px;
-    transform: rotate(277deg) scaleX(-1);
+  position: absolute;
+  right: -78px;
+  top: -101px;
+  transform: rotate(277deg) scaleX(-1);
 }
 
-.popular__sheet_left_buttom{
-    display: none;
+.popular__sheet_left_buttom {
+  display: none;
 }
 
-.popular__sheet_rigth_buttom{
-    display: none;
+.popular__sheet_rigth_buttom {
+  display: none;
 }
 
 .popular__title {
-    color: #000;
-    font-family: var(--font-gormorant);
-    font-size: 60px;
-    font-weight: 400;
-    text-align: center;
+  color: #000;
+  font-family: var(--font-gormorant);
+  font-size: 60px;
+  font-weight: 400;
+  text-align: center;
 }
 
 .popular__wrapper {
-    margin: 0 auto;
-    margin-top: 90px;
-    width: 1188px;
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
+  margin: 0 auto;
+  margin-top: 90px;
+  width: 1188px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
 }
 
 .popular__wrapper__slider {
-    display: none;
+  display: none;
 }
 
 @media (max-width: 575px) {
-    .popular {
-        height: 516px;
-        padding-top: 66px;
-        padding-bottom: 30px;
-    
-    }
-    
-    .popular__title {
-        color: #000;
-        font-family: var(--font-gormorant);
-        font-size: 20px;
-        font-weight: 400;
-        text-align: center;
-    }
-    
-    .popular__wrapper {
-       display: none;
-    }
+  .popular {
+    max-height: 516px;
+    padding-top: 66px;
+    padding-bottom: 30px;
+    min-height: unset;
+    overflow-y: hidden;
+  }
 
-    .popular__wrapper__slider {
-        display: block;
-        margin: 0 auto;
-        margin-top: 36px;
-        width: 188px;
-        /* display: flex;
+  .popular__title {
+    color: #000;
+    font-family: var(--font-gormorant);
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .popular__wrapper {
+    display: none;
+  }
+
+  .popular__wrapper__slider {
+    display: block;
+    margin: 0 auto;
+    margin-top: 36px;
+    width: 188px;
+    column-gap: 20px;
+    /* display: flex;
         justify-content: space-between;
         align-items: start; */
-    }
+  }
 
-    .popular__sheet_left {
-        width: 74px;
-        height: 79px;
-        top: 15px;
-        left: -5px;
-        transform: rotate(17deg) scaleX(-1);
-    }
-    
-    .popular__sheet_rigth {
-        width: 87px;
-        height: 93px;
-        right: -26px;
-        top: -9px;
-        transform: rotate(300deg) scaleX(-1);
-    }
-    
-    .popular__sheet_left_buttom{
-        display: block;
-        position: absolute;
-        left: 3px;
-        bottom: 29px;
-        transform: rotate(20deg) scaleX(-1);
-    }
-    
-    .popular__sheet_rigth_buttom{
-        display: block;
-        position: absolute;
-        right: -13px;
-        bottom: 43px;
-        transform: rotate(199deg) scaleX(-1);
-    }
+  .popular__sheet_left {
+    width: 74px;
+    height: 79px;
+    top: 15px;
+    left: -5px;
+    transform: rotate(17deg) scaleX(-1);
+  }
 
+  .popular__sheet_rigth {
+    width: 87px;
+    height: 93px;
+    right: -26px;
+    top: -9px;
+    transform: rotate(300deg) scaleX(-1);
+  }
+
+  .popular__sheet_left_buttom {
+    display: block;
+    position: absolute;
+    left: 3px;
+    bottom: 29px;
+    transform: rotate(20deg) scaleX(-1);
+  }
+
+  .popular__sheet_rigth_buttom {
+    display: block;
+    position: absolute;
+    right: -13px;
+    bottom: 43px;
+    transform: rotate(199deg) scaleX(-1);
+  }
 }
-

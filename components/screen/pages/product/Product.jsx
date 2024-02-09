@@ -35,13 +35,13 @@ function Product({ product }) {
   };
 
   const handleDeleteProduct = async () => {
-    const id = toast.loading("Загрузка удаленние продукта...");
+    const id = toast.loading("Загрузка удаление продукта...");
 
     await deleteProduct(
       { productId: product._id, imageUrl: product?.imageUrl },
       {
         onSuccess: () => {
-          toast.success("Товар успешнно удалён", { id });
+          toast.success("Товар успешно удалён", { id });
           router.push("/");
           return;
         },
@@ -56,7 +56,7 @@ function Product({ product }) {
 
   const handleAddProduct = async () => {
     if (!isAuthenticated) {
-      toast.error("Пожалуйста авторизируйтесь чтобы дабавь товар в карзину");
+      toast.error("Пожалуйста авторизируйтесь чтобы дабавить товар в карзину");
       router.push("/login");
 
       return;
@@ -68,7 +68,7 @@ function Product({ product }) {
       { productId: product._id, maxQuantity: product.quantity },
       {
         onSuccess: () => {
-          toast.success("Товар успешнно дабавлен", { id });
+          toast.success("Товар успешно дабавлен", { id });
         },
         onError: (message) => {
           const messageError = errorMessage(message);
@@ -82,8 +82,6 @@ function Product({ product }) {
   };
 
   // const desc = product.description.split(".");
-
-  console.log(product);
 
   return (
     <div className={styled.product}>
@@ -131,7 +129,8 @@ function Product({ product }) {
         <p className={styled.product__price}>{product.price} р</p>
 
         <p className={styled.product__made}>
-          Страна производитель : {product.made}
+          Страна производитель :{" "}
+          {`${product.made[0].toUpperCase()}${product.made.slice(1)}`}
         </p>
 
         <p className={styled.product__kind}>Вид цветов:</p>
@@ -157,7 +156,7 @@ function Product({ product }) {
 
         <p className={styled.product__desc}>{product.type}</p>
 
-        {(product?.quantity && isAuthenticated) > 0  ? (
+        {(product?.quantity && isAuthenticated) > 0 ? (
           <button
             className={styled.product__button}
             disabled={isLoading}
@@ -167,7 +166,9 @@ function Product({ product }) {
           </button>
         ) : isAuthenticated ? (
           <div className={styled.product__not}>Товар закончился</div>
-        ) : ("")}
+        ) : (
+          ""
+        )}
       </div>
     </div>
   );

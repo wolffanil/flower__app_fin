@@ -55,7 +55,6 @@
   height: 255px;
 }
 
-
 @media (max-width: 575px) {
   .cartItem {
     width: 188px;
@@ -67,11 +66,10 @@
     top: 5px;
     right: -10px;
   }
-  
+
   .cartItem__photo {
     object-fit: cover;
-    width: 232px;
-
+    width: 300px;
     height: 255px;
   }
 
@@ -79,7 +77,6 @@
     width: 148px;
     padding: 11px 19px;
     font-size: 15px;
-
   }
 
   .cartItem__buy {
@@ -91,7 +88,7 @@
     font-size: 17px;
     margin-top: 16px;
   }
-  
+
   .cartItem__price {
     margin-top: 15px;
     font-size: 17px;

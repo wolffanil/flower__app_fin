@@ -9,7 +9,7 @@ export const LocateData = () => {
       </div>
       <div className={styled.locate__data__row}>
         <p className={styled.locate__data__p_f}>Телефон</p>
-        <p className={styled.locate__data__p_t}>=7-999-111-11-11</p>
+        <p className={styled.locate__data__p_t}>+7-999-111-11-11</p>
       </div>
       <div className={styled.locate__data__row}>
         <p className={styled.locate__data__p_f}>Режим работы</p>

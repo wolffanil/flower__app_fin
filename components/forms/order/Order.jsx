@@ -140,7 +140,7 @@ function Order() {
         <p className={styled.error}>{errors.time.message}</p>
       )}
 
-      <p className={styled.form__order_subtitle}>Адресc</p>
+      <p className={styled.form__order_subtitle}>Адреc</p>
 
       <input
         type="text"

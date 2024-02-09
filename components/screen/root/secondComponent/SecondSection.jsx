@@ -1,14 +1,11 @@
-import CardItem from "@/components/ui/cardItem/CardItem"
-import styled from './second.module.css';
+import CardItem from "@/components/ui/cardItem/CardItem";
+import styled from "./second.module.css";
 import SliderFlower from "./SliderFlower";
 import Image from "next/image";
 
-async function SecondSection({cards}) {
-
-
+async function SecondSection({ cards }) {
   return (
     <section className={styled.popular}>
-
       <Image
         src="/icons/sheet.svg"
         alt="sheet"
@@ -41,26 +38,18 @@ async function SecondSection({cards}) {
         className={styled.popular__sheet_rigth_buttom}
       />
 
+      <h2 className={styled.popular__title}>ПОПУЛЯРНЫЕ ТОВАРЫ</h2>
 
-        <h2 className={styled.popular__title}>ПОПУЛЯРНЫЕ ТОВАРЫ</h2>
+      <div className={styled.popular__wrapper}>
+        {!!cards &&
+          cards.map((card, key) => <CardItem card={card} key={key} />)}
+      </div>
 
-        <div className={styled.popular__wrapper}>
-            
-            {!!cards && cards.map((card, key) => (
-                <CardItem card={card} key={key} /> 
-            ))}
-
-
-        </div>
-
-
-        <div className={styled.popular__wrapper__slider}>
-          <SliderFlower cards={cards} />
-        </div>
-
-
+      <div className={styled.popular__wrapper__slider}>
+        <SliderFlower cards={cards} />
+      </div>
     </section>
-  )
+  );
 }
 
 export default SecondSection;
