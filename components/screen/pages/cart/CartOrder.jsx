@@ -80,7 +80,7 @@ export default function CartOrder({ item, finished }) {
 
   return (
     <div className={styled.cart}>
-      <img
+      <Image
         src={imageUrl}
         alt="flower"
         width={350}
