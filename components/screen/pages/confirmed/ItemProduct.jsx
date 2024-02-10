@@ -70,10 +70,10 @@ function ItemProduct({ item, order, user, isAdmin }) {
       <Image
         src={item.product.imageUrl}
         alt="item"
-        onClick={() => router.push(`/flower/${item.product._id}`)}
-        className={styled.confirmedItem__items_photo}
         width={141}
         height={193}
+        onClick={() => router.push(`/flower/${item.product._id}`)}
+        className={styled.confirmedItem__items_photo}
       />
       <img
         src="/icons/plus.svg"
